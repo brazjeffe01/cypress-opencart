@@ -1,0 +1,14 @@
+{
+  "name": "cypress-opencart",
+  "version": "1.0.0",
+  "description": "Projeto de testes E2E na plataforma OpenCart utilizando o framework Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jefferson Braz",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.4"
+  }
+}
