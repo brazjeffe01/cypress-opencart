@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run",
-    "cypress-cloud": "npx cypress run --record --key 6e0f1245-2934-4854-b0c3-aa38793f1b72"
+    "cypress-cloud": "npx cypress run --record --key 6e0f1245-2934-4854-b0c3-aa38793f1b72",
+    "test-chrome": "npx cypress run --browser chrome"
   },
   "author": "Jefferson Braz",
   "license": "ISC",

@@ -7,6 +7,5 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: 'https://demo.opencartbrasil.com.br/',
-    video: true,
   },
 });
