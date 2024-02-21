@@ -4,11 +4,12 @@
   "description": "Projeto de testes E2E na plataforma OpenCart utilizando o framework Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run",
+    "cypress-cloud": "npx cypress run --record --key 6e0f1245-2934-4854-b0c3-aa38793f1b72"
   },
   "author": "Jefferson Braz",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^13.6.4"
+  "devDependencies": {
+    "cypress": "^13.6.5"
   }
 }
