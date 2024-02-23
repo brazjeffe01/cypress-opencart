@@ -12,6 +12,11 @@ class Login {
         cy.get("input[type='submit']").should('have.class','btn-primary').click()
         
     }
+
+    validarLogin() {
+        //cy.get("ul.list-inline > li > a.dropdown-toggle").should('have.attr','title','Minha conta')
+        cy.get('ul.list-inline > li').contains('Minha conta')
+    }
 }
 
 export default new Login()

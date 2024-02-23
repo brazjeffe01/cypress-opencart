@@ -7,5 +7,6 @@ describe('should validade de login page functionalities', () => {
       cy.visit('/index.php?route=account/login')
       cy.url().should('contain','account/login')
       login.preencherLoginSenha()
+      login.validarLogin()
     })
   })
