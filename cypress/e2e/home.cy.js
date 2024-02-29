@@ -1,8 +1,13 @@
 /// <reference types="cypress" />
 
-describe('First steps', () => {
-  it('should access the opencart home page ', () => {
+describe('Validações <Header>', () => {
+  beforeEach(() => {
     cy.visit('/')
-    cy.url().should('contain','opencart')
+  })
+  it('deve verificar moeda', () => {
+    cy.get('div > div.pull-left').first().find('.btn-group > button').click()
+    cy.get('div.open li').first().should('contain','Real')
+    cy.get('div.open li').eq(1).click()
+    cy.get('div > div.pull-left').first().find('.btn-group > button').should('contain','$')
   })
 })

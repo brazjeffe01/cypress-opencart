@@ -27,9 +27,12 @@
 Cypress.Commands.add('efetuarLogin', () => {
     cy.fixture('login').as('dados-login')
     cy.get('@dados-login').then((dados) => {
+        cy.visit('/index.php?route=account/login')
         cy.get('#input-email').should('have.attr','placeholder','E-mail').type(dados.login)
         cy.get('#input-password').should('have.attr','placeholder','Senha').type(dados.passwd)
     })
     cy.get("input[type='submit']").should('have.class','btn-primary').click()
     cy.get('ul.list-inline > li').contains('Minha conta')
+    cy.get('a > img[title="Sua loja"]').should('have.class','img-responsive').click()
+    cy.url().should('include','common/home')
 })
